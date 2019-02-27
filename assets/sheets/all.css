@@ -1,0 +1,165 @@
+* {
+	transition: all 0.2s ease-in-out;
+}
+
+element {
+  darkGray: grayscale(170);
+  hoverColor: rgba(0, 128, 255, 0.3);
+}
+
+body {
+	background: rgba(255, 169, 25, 0.3);
+	background-image: url(../img/logo.svg);
+	background-size: 45%;
+	background-repeat: no-repeat;
+	background-position: 32px 32px;
+	height: 100vh;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+i {
+	border-radius: 5px;
+	padding: 5px;
+	color: black;
+	font-size: 40px; 
+	margin: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+	background-color: rgba(0, 128, 255, 0.3);
+}
+
+.main {
+	padding-top: 25vh;
+	height: 90vh;
+}
+
+.main-title {
+	font-size: 65px; 
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+	font-weight: 700; 
+	color: var(darkGray);
+	text-align: right;
+}
+
+.subtitle-container {
+	float: right;
+}
+
+.main-subtitle {
+	width: 330px;
+	margin: 0;
+	padding: 0;
+	filter: invert(35%);
+}
+
+.main-button {
+	margin-top: 25vh;
+	display: block;
+	text-align: right;
+	width: 275px; 
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+	color: white;
+	float: right;
+}
+
+span.main-button {
+	margin-top: 1vh;
+}
+
+span:hover {
+	color: #FF7500;
+	transition: all 0.2s ease-in-out;
+}
+
+.footer {
+	text-align: right;
+	height: 10vh;
+}
+
+
+@media screen and (max-width: 560px) {
+	body {
+		background-size: 55%;
+		background-repeat: no-repeat;
+		background-position: 50% 43%;
+	}
+
+	.main {
+		padding-top: 48px;
+	}
+
+	.main-title {
+		font-size: 35px; 
+		text-align: center;
+	}
+
+	.main-subtitle {
+		width: 200px;
+	}
+
+	.main-button {
+		width: 180px; 
+		margin: 56vh auto 0;
+		float: none;
+	}
+
+	span.main-button {
+		text-align: center;
+	}
+
+	.footer {
+		text-align: center;
+	}
+
+	.subtitle-container {
+		float: unset;
+		width: 200px;
+   	 	margin: auto;
+	}	
+}
+
+@media screen and (min-width: 560px) and (max-width: 850px) {
+	body {
+		background-size: 30%;
+		background-repeat: no-repeat;
+		background-position: 32px 32px;
+	}
+
+	i {
+		border-radius: 5px;
+		font-size: 30px; 
+	}
+
+	.main {
+		padding-top: 25vh;
+		height: 85vh;
+	}	
+
+	.main-title {
+		font-size: 35px; 
+	}
+
+	.main-subtitle {
+			width: 200px;
+	}
+
+	.main-button {
+		width: 130px; 
+		margin: 25vh auto 0;
+		float: right;
+	}
+
+	.footer {
+		height: 5vh;
+	}
+}
+
